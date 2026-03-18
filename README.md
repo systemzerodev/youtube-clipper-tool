@@ -1,14 +1,32 @@
 # 🎬 YouTube Clipper Tool
 
-A simple yet powerful tool to clip videos directly from YouTube.
+A simple and scalable tool to clip videos directly from YouTube.
 
-This project is designed as a scalable foundation for building a smart video clipping system, with future support for automation workflows and AI-assisted features.
+This project is designed as a solid foundation for building a video clipping system, with future support for automation workflows and AI-assisted features.
 
 ---
 
-## 🚀 Features
+## 📌 Project Status
 
-### ✅ Current Features
+🚧 **Paused (Temporarily)**
+
+This project is currently paused while focusing on another active project.
+Development will resume after the current priority project is completed.
+
+---
+
+## 🎯 Goals
+
+- Clip videos from YouTube quickly and efficiently
+- Provide a simple and clean workflow for users
+- Build a scalable backend architecture
+- Prepare for automation and AI integration
+
+---
+
+## 🚀 Planned Features
+
+### ✅ Core Features (Phase 1)
 
 - Input YouTube URL
 - Download video using `yt-dlp`
@@ -17,14 +35,21 @@ This project is designed as a scalable foundation for building a smart video cli
 
 ---
 
-### 🔮 Coming Soon
+### 🔄 Upcoming Features
 
 - Multiple clip generation
 - Smart clip suggestions (semi-automatic)
 - Subtitle editor
+- Improved user experience (preview & timeline)
+
+---
+
+### 🔮 Future Enhancements
+
 - AI-powered highlight detection
+- Speech-to-text (subtitle automation)
+- Content repurposing (Shorts / TikTok clips)
 - Workflow automation with n8n
-- Batch processing
 
 ---
 
@@ -42,7 +67,7 @@ youtube-clipper-tool/
 │   │
 │   └── requirements.txt
 │
-├── frontend/        # Future UI (Web / Desktop)
+├── frontend/        # Future UI
 ├── n8n/             # Workflow automation (future)
 │
 ├── README.md
@@ -66,113 +91,48 @@ youtube-clipper-tool/
 
 ### Future AI Integration
 
-- Speech-to-text (Whisper)
+- Whisper (speech-to-text)
 - NLP for highlight detection
 
 ---
 
-## 🧭 How It Works
+## 🧭 How It Will Work
 
-### Basic Flow
+### Basic Flow (Initial Version)
 
 1. User inputs a YouTube link
-2. Backend downloads the video
+2. System downloads the video
 3. User selects start & end timestamps
-4. System clips the video using ffmpeg
-5. Output video is ready to download
+4. Video is clipped using ffmpeg
+5. Result is ready for download
 
 ---
 
 ### Future Flow (With Automation & AI)
 
 1. User inputs a YouTube link
-2. Workflow (n8n) processes the video
+2. Workflow system processes the video
 3. System generates suggested clips
 4. User selects preferred clip
-5. Subtitle editing (optional)
+5. Optional subtitle editing
 6. Final export
 
 ---
 
-## 🛠 Setup (Backend)
-
-### 1. Clone Repository
+## 🛠 Setup (Planned)
 
 ```bash
 git clone https://github.com/systemzerodev/youtube-clipper-tool.git
 cd youtube-clipper-tool
 ```
 
----
-
-### 2. Install Dependencies
-
-```bash
-cd backend
-pip install -r requirements.txt
-```
-
----
-
-### 3. Install ffmpeg
-
-Make sure ffmpeg is installed and accessible:
-
-```bash
-ffmpeg -version
-```
-
----
-
-### 4. Run Server
-
-```bash
-uvicorn app.main:app --reload
-```
-
----
-
-### 5. Open API Docs
-
-```
-http://127.0.0.1:8000/docs
-```
-
----
-
-## 🔌 API Endpoints (Basic)
-
-### POST `/clip`
-
-Clip a video from YouTube
-
-**Params:**
-
-- `url` → YouTube video link
-- `start` → start timestamp (e.g. 00:01:00)
-- `end` → end timestamp (e.g. 00:02:00)
-
----
-
-## 🧠 Project Vision
-
-This project starts as a simple clipping tool but is designed to evolve into a:
-
-> 🎯 Smart Content Clipping System
-
-Future possibilities:
-
-- Auto-generate viral clips
-- Content repurposing (TikTok / Shorts)
-- AI-assisted editing pipeline
-- Fully automated workflows
+Further setup instructions will be added when development resumes.
 
 ---
 
 ## ⚠️ Disclaimer
 
 This project is intended for educational and personal use.
-
 Please respect YouTube’s Terms of Service when downloading and using content.
 
 ---
@@ -185,4 +145,4 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-Built with ❤️ as part of a learning and experimentation journey in fullstack development, automation, and AI systems.
+Built as part of a learning journey in fullstack development, automation systems, and AI integration.
